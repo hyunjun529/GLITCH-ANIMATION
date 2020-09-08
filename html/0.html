@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+  <title>GLITCH ANIMATION</title>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="author" content="@hyunjun529">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link rel="stylesheet" href="../css/glitch-0.css">
+</head>
+<body id="ga-body">
+  
+  <h1>GLITCH</h1>
+
+  <nav>
+    <ul>
+      <li><a href="../">/</a></li>
+      <li><a href="../0.html">0</a></li>
+      <li><a href="../1.html">1</a></li>
+      <li><a href="../2.html">3</a></li>
+      <li><a href="../4.html">4</a></li>
+    </ul>
+  </nav>
+  
+  <div id="ga-wrap">
+  
+    <h2 class="glitch">GLITCH</h2>
+    <small class="glitch">GLITCH</small>
+
+    <div>
+      <a class="glitch">GLITCH</a>
+    </div>
+
+    <div>
+      <ul>
+        <li class="glitch">★</li>
+        <li class="glitch">☆</li>
+        <li class="glitch">≛</li>
+        <li class="glitch">⋆</li>
+        <li class="glitch">⍟</li>
+        <li class="glitch">⍣</li>
+        <li class="glitch">☆</li>
+        <li class="glitch">★</li>
+        <li class="glitch">✡</li>
+        <li class="glitch">✦</li>
+        <li class="glitch">✧</li>
+        <li class="glitch">✪</li>
+        <li class="glitch">✬</li>
+        <li class="glitch">✯</li>
+        <li class="glitch">✴</li>
+        <li class="glitch">✵</li>
+        <li class="glitch">✸</li>
+      </ul>
+    </div>
+
+    <div>
+      <ul>
+        <li class="glitch">GLITCH</li>
+        <li class="glitch">GLITCH GLITCH</li>
+        <li class="glitch">GLITCH GLITCH GLITCH</li>
+        <li class="glitch">GLITCH GLITCH GLITCH GLITCH</li>
+        <li class="glitch">GLITCH GLITCH GLITCH GLITCH GLITCH</li>
+        <li class="glitch">GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH</li>
+        <li class="glitch">GLITCH GLITCH GLITCH GLITCH GLITCH</li>
+        <li class="glitch">GLITCH GLITCH GLITCH GLITCH</li>
+        <li class="glitch">GLITCH GLITCH GLITCH</li>
+        <li class="glitch">GLITCH GLITCH</li>
+        <li class="glitch">GLITCH</li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="glitch">
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCsH GLITCH GLITCH GLITCH GLITCH
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+        <br>
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+        GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+      </p>
+    </div>
+
+    <div>
+      <button class="glitch">🧭</button>
+      <button class="glitch">GLITCH</button>
+    </div>
+
+    <div>
+      <img class="glitch" src="../img/s.jpg">
+      <img class="glitch" src="../img/v.jpg">
+      <img class="glitch" src="../img/h.jpg">
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js" integrity="sha512-LF8ZB1iTwi4Qvkm4pekHG4a437Y9Af5ZuwbnW4GTbAWQeR2E4KW8WF+xH8b9psevV7wIlDMx1MH9YfPqgKhA/Q==" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    var VALUES = function() {
+      this.shock = 0.5;
+    };
+    var values = new VALUES();
+
+    var gui = new dat.GUI();
+
+    var onShock = gui.add(values, "shock", 0.0, 1.0);
+
+    onShock.onChange(() => {
+      applyEffect();
+    });
+
+    function applyEffect() {
+      Array.from(document.getElementsByClassName("glitch")).forEach(item => {
+        item.style.backgroundColor = `rgba(0, 0, 0,`+values.shock+`)`;
+      });
+    };
+
+    applyEffect();
+  </script>
+
+</body>
+</html>
