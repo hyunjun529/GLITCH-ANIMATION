@@ -1,18 +1,18 @@
 <html lang="en">
+
 <head>
   <title>GLITCH ANIMATION</title>
-  
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="author" content="@hyunjun529">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="../css/style.css">
-
-  <link rel="stylesheet" href="../css/glitch-0.css">
 </head>
+
 <body id="ga-body">
-  
+
   <h1>GLITCH</h1>
 
   <nav>
@@ -24,9 +24,9 @@
       <li><a href="../4.html">4</a></li>
     </ul>
   </nav>
-  
+
   <div id="ga-wrap">
-  
+
     <h2 class="glitch">GLITCH</h2>
     <small class="glitch">GLITCH</small>
 
@@ -103,30 +103,55 @@
 
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js" integrity="sha512-LF8ZB1iTwi4Qvkm4pekHG4a437Y9Af5ZuwbnW4GTbAWQeR2E4KW8WF+xH8b9psevV7wIlDMx1MH9YfPqgKhA/Q==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"
+    integrity="sha512-LF8ZB1iTwi4Qvkm4pekHG4a437Y9Af5ZuwbnW4GTbAWQeR2E4KW8WF+xH8b9psevV7wIlDMx1MH9YfPqgKhA/Q=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-js/1.0.1/color.min.js"
+    integrity="sha512-ODHUqBj0yOk4rj5ORt7EExbT4Jq+yQ5EbeQH2Ri3eMkCBIR9wgUOWXO5CYr37yl2pV1+YdXIPbAYgEKHyM/k8A=="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/jss/dist/jss.min.js" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
-    var VALUES = function() {
+    var Color = net.brehaut.Color;
+
+    // ===
+
+    var styles = {
+      box: {
+        "color": "#000",
+        "background-color": "#000",
+      }
+    };
+
+    var sheet = jss.default.createStyleSheet(styles, {
+      link: true
+    }).attach();
+
+    Array.from(document.getElementsByClassName("glitch")).forEach(item => {
+      item.className += " " + sheet.classes.box;
+    });
+
+    // ===
+
+    var VALUES = function () {
       this.shock = 0.5;
     };
     var values = new VALUES();
 
     var gui = new dat.GUI();
 
-    var onShock = gui.add(values, "shock", 0.0, 1.0);
+    gui.add(values, "shock", 0.0, 1.0).onChange(updateCSS);
 
-    onShock.onChange(() => {
-      applyEffect();
-    });
+    // ===
 
-    function applyEffect() {
-      Array.from(document.getElementsByClassName("glitch")).forEach(item => {
-        item.style.backgroundColor = `rgba(0, 0, 0,`+values.shock+`)`;
-      });
+    function updateCSS() {
+      sheet.getRule("box").prop("color", Color([128, 255, 255 * (1 - values.shock)]));
+      sheet.getRule("box").prop("background-color", Color([255, 128, 255 * (1 - values.shock)]));
     };
-
-    applyEffect();
+    
+    updateCSS();
   </script>
 
 </body>
+
 </html>
