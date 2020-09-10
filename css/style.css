@@ -12,7 +12,7 @@
 
 #ga-body {
     background: linear-gradient(180deg, #BA11F7, #6A04E0);
-    padding: 2rem;
+    padding: 3vw;
 }
 
 #ga-wrap {
@@ -30,6 +30,12 @@
 
 #youtube {
     width: 100%;
+}
+
+#multi-line {
+    max-width: 100%;
+    width: 24rem;
+    margin: auto;
 }
 
 .button {
