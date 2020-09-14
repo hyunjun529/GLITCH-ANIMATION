@@ -21,6 +21,35 @@
     text-align: center;
 }
 
+#ga-nav {
+    width: 100%;
+    padding: 10px;
+}
+
+#ga-nav ul {
+    margin: auto;
+}
+
+#ga-nav li {
+    max-width: 15%;
+    width: 40px;
+    border: solid 1px black;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#ga-nav a {
+    width: 100%;
+    line-height: 30px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+#ga-nav a:visited {
+    color: black;
+}
+
 .item-wrap {
     max-width: 100%;
     width: 30rem;
@@ -80,11 +109,8 @@
     width: 100%;
 }
 
-#img-s {
-}
+#img-s {}
 
-#img-v {
-}
+#img-v {}
 
-#img-h {
-}
+#img-h {}
