@@ -57,7 +57,48 @@
     margin-top: 10px;
 }
 
+#title {
+    text-align: left;
+}
+
+#title h2 {
+    font-size: 150%;
+}
+
+#title small {
+    font-size: 120%;
+}
+
 #youtube {
+    width: 100%;
+}
+
+#post-list {
+    text-align: left;
+}
+
+#post-list li {
+    margin-bottom: 10px;
+}
+
+#post-list span {
+    font-size: 80%;
+}
+
+#post-list h3 {
+    font-size: 130%;
+    padding: 5px 0;
+}
+
+#post-list p {
+    padding-left: 10px;
+}
+
+#canvas {
+    width: 100%;
+}
+
+#list li {
     width: 100%;
 }
 
