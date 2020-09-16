@@ -33,7 +33,9 @@
         </div>
 
         <div class="item-wrap">
-            <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/3vhA8njtoQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="glitch">
+                <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/3vhA8njtoQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
 
         <div class="item-wrap">
@@ -42,17 +44,17 @@
 
         <div class="item-wrap" id="post-list">
             <ul>
-                <li class="glitch">
-                    <span>Jun 07, 1980</span>
+                <li>
+                    <span class="glitch">Jun 07, 1980</span>
                     <h3>
                         <a>
                       Lorem ipsum
                     </a>
                     </h3>
                 </li>
-                <li class="glitch">
+                <li>
                     <span>Jun 07, 1980</span>
-                    <h3>
+                    <h3 class="glitch">
                         <a>
                           Lorem ipsum
                         </a>
@@ -63,22 +65,22 @@
                     </p>
                 </li>
 
-                <li class="glitch">
+                <li>
                     <span>Jun 07, 1980</span>
                     <h3>
-                        <a>
+                        <a class="glitch">
                           별 헤는 밤
                         </a>
                     </h3>
                 </li>
-                <li class="glitch">
+                <li>
                     <span>Jun 07, 1980</span>
                     <h3>
                         <a>
                           별 헤는 밤
                         </a>
                     </h3>
-                    <p>
+                    <p class="glitch">
                         멀리 하나에 별빛이 헤는 둘 이웃 마디씩 동경과 계십니다. 하나에 이름과, 언덕 당신은 그리고 멀리 버리었습니다. 그러나 둘 하나에 내린 못 풀이 나는 있습니다. 소녀들의 마리아 라이너 프랑시스 계십니다. 잔디가 소학교 헤는 시인의 가난한 별빛이 같이 멀듯이, 듯합니다.
                     </p>
                 </li>
@@ -187,9 +189,9 @@
         <div class="item-wrap">
             <p class="glitch" id="multi-line">
                 GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
-                GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
-                <br> GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
-                GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+                GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+                GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
+                GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH
             </p>
         </div>
 
@@ -200,11 +202,17 @@
 
         <div class="item-wrap" id="img-wrap">
             <div id="img-wrap-col">
-                <img class="glitch img " id="img-s" src="../img/s.jpg">
-                <img class="glitch img " id="img-v" src="../img/v.jpg">
+                <div class="glitch">
+                    <img class="img" id="img-s" src="../img/s.jpg">
+                </div>
+                <div class="glitch">
+                    <img class="img" id="img-v" src="../img/v.jpg">
+                </div>
             </div>
             <div id="img-wrap-row">
-                <img class="glitch img " id="img-h" src="../img/h.jpg">
+                <div class="glitch">
+                    <img class="img " id="img-h" src="../img/h.jpg">
+                </div>
             </div>
         </div>
 
@@ -213,43 +221,107 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js" integrity="sha512-LF8ZB1iTwi4Qvkm4pekHG4a437Y9Af5ZuwbnW4GTbAWQeR2E4KW8WF+xH8b9psevV7wIlDMx1MH9YfPqgKhA/Q==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-js/1.0.1/color.min.js" integrity="sha512-ODHUqBj0yOk4rj5ORt7EExbT4Jq+yQ5EbeQH2Ri3eMkCBIR9wgUOWXO5CYr37yl2pV1+YdXIPbAYgEKHyM/k8A==" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/jss/dist/jss.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/jss-preset-default/dist/jss-preset-default.min.js" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
         var Color = net.brehaut.Color;
 
         // ===
 
+        const $quoteSym = '';
         var styles = {
             box: {
                 "color": "#000",
                 "background-color": "#000",
+            },
+            glitch: {
+                "position": "relative",
+                "&:hover": {
+                    background: "blue"
+                },
+                "&:before": {
+                    "content": `'${$quoteSym}'`,
+                    "position": "absolute",
+                    "top": "0",
+                    "left": "0",
+                    "width": "100%",
+                    "height": "100%",
+                    "left": "1px",
+                    "background-color": "rgba(255, 0, 0, 0.1)",
+                    "mix-blend-mode": "exclusion",
+                    "animation": "$glitch-anim 2s infinite linear alternate-reverse",
+                },
+                "&:after": {
+                    "content": `'${$quoteSym}'`,
+                    "position": "absolute",
+                    "top": "0",
+                    "width": "100%",
+                    "height": "100%",
+                    "left": "-1px",
+                    "background-color": "rgba(0, 0, 255, 0.3)",
+                    "mix-blend-mode": "exclusion",
+                    "animation": "$glitch-anim 1s infinite linear alternate-reverse"
+                }
+            },
+            '@keyframes glitch-anim': {
+                "0%": {
+                    "clip-path": "inset(40% 0 61% 0)"
+                },
+                "20%": {
+                    "clip-path": "inset(92% 0 1% 0)"
+                },
+                "40%": {
+                    "clip-path": "inset(43% 0 1% 0)"
+                },
+                "60%": {
+                    "clip-path": "inset(25% 0 58% 0)"
+                },
+                "80%": {
+                    "clip-path": "inset(54% 0 7% 0)"
+                },
+                "100%": {
+                    "clip-path": "inset(58% 0 43% 0)"
+                }
             }
         };
+
+        jss.default.setup(jssPresetDefault.default());
+
+        jss.default.use(
+            jssPresetDefault.default().plugins[6]
+        );
 
         var sheet = jss.default.createStyleSheet(styles, {
             link: true
         }).attach();
 
         Array.from(document.getElementsByClassName("glitch")).forEach(item => {
-            item.className += " " + sheet.classes.box;
+            item.className += " " + sheet.classes.box + " " + sheet.classes.glitch;
         });
 
         // ===
 
         var VALUES = function() {
+            this.itemBackground = "#E88EAF";
             this.shock = 0.5;
         };
         var values = new VALUES();
 
         var gui = new dat.GUI();
 
+        gui.addColor(values, "itemBackground").onChange(updateCSS);
         gui.add(values, "shock", 0.0, 1.0).onChange(updateCSS);
 
         // ===
 
         function updateCSS() {
-            sheet.getRule("box").prop("color", Color([128, 255, 255 * (1 - values.shock)]));
-            sheet.getRule("box").prop("background-color", Color([255, 128, 255 * (1 - values.shock)]));
+            sheet.getRule("box").prop("color", "black");
+            sheet.getRule("box").prop("background-color", values.itemBackground);
+
+            let id_glitch = sheet.getRule("glitch").id
+
+            sheet.getRule("." + id_glitch + ":before").prop("background-color", Color([255, 128, 255 * (1 - values.shock)], 0.5))
+            sheet.getRule("." + id_glitch + ":after").prop("background-color", Color([128, 255, 255 * (1 - values.shock)], 0.5))
         };
 
         updateCSS();
