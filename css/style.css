@@ -17,12 +17,17 @@
 #ga-wrap {
     background-color: white;
     padding: 10px;
+    padding-top: 100px;
     text-align: center;
 }
 
 #ga-nav {
-    width: 100%;
+    width: 70%;
     padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    user-select: none;
 }
 
 #ga-nav ul {
@@ -51,9 +56,10 @@
 
 #ga-nav .nav-card {
     display: inline-flex;
-    width: 30vw;
-    max-width: 30vw;
-    height: 60vw;
+    width: 45vw;
+    min-width: 30%;
+    max-width: 40%;
+    height: 30vh;
     margin: 2.5px 0px 5px 2.5px;
 }
 
@@ -62,7 +68,7 @@
     justify-self: center;
     vertical-align: middle;
     width: 100%;
-    line-height: 60vw;
+    line-height: 30vh;
 }
 
 .item-wrap {
