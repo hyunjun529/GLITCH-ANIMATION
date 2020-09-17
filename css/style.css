@@ -49,6 +49,22 @@
     color: black;
 }
 
+#ga-nav .nav-card {
+    display: inline-flex;
+    width: 30vw;
+    max-width: 30vw;
+    height: 60vw;
+    margin: 2.5px 0px 5px 2.5px;
+}
+
+#ga-nav .nav-card a {
+    align-self: center;
+    justify-self: center;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 60vw;
+}
+
 .item-wrap {
     max-width: 100%;
     width: 30rem;
@@ -148,9 +164,3 @@
 .img {
     width: 100%;
 }
-
-#img-s {}
-
-#img-v {}
-
-#img-h {}

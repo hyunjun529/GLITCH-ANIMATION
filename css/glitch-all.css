@@ -1,9 +1,9 @@
-.glitch {
+.glitch-0 {
     position: relative;
 }
 
-.glitch::before,
-.glitch::after {
+.glitch-0::before,
+.glitch-0::after {
     content: "";
     position: absolute;
     top: 0;
@@ -12,17 +12,19 @@
     height: 100%;
 }
 
-.glitch::before {
+.glitch-0::before {
+    pointer-events: none;
     left: 1px;
-    background-color: rgba(255, 0, 0, 0.1);
-    mix-blend-mode: exclusion;
-    animation: glitch-anim 2s infinite linear alternate-reverse;
+    background-color: rgba(183, 117, 191, 0.75);
+    mix-blend-mode: multiply;
+    animation: glitch-anim 1s infinite linear alternate-reverse;
 }
 
-.glitch::after {
+.glitch-0::after {
+    pointer-events: none;
     left: -1px;
-    background-color: rgba(0, 0, 255, 0.3);
-    mix-blend-mode: exclusion;
+    background-color: rgba(109, 86, 191, 0.75);
+    mix-blend-mode: multiply;
     animation: glitch-anim 2s infinite linear alternate-reverse;
 }
 
